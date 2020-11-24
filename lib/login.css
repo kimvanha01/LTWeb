@@ -1,0 +1,96 @@
+body{
+	background-color: #FFF;
+	font-family: sans-serif;
+}
+
+.form1{
+	
+	margin-top: 20px;
+}
+.login{
+
+	width: 30%;
+	height: 430px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+	margin-top: 76px;
+}
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+	border-radius: 10px;
+}
+
+.header h2 {
+	margin: 0;
+	color: black;
+}
+
+
+.login button{
+	width: 30%;
+	height: 40px;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px grey;
+	margin-top: 70px;
+	margin-left: 40%;
+	display: block;
+	font-family: inherit;
+}
+.login button:hover {
+	background-color: grey;
+}
+.login a{	
+	float: right;
+	padding-right: 40px;
+	padding-top: 30px;
+	color: black;
+}
+.form-control{
+	position: relative;
+}
+.form-control input{
+	width: 70%;
+	height: 40px;
+	border: 1px solid grey;
+	border-radius: 6px;
+	padding-left: 5%;
+	box-shadow: 5px 5px 5px grey;
+
+}
+
+.form-control label {
+	color: black;
+	display: inline-block;
+	margin-bottom: 7px;
+	margin-top: 5px;
+	padding-left: 20%;
+	color: black;
+	text-shadow: 2px 2px 2px grey;
+	float:left;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+
+}
+
+.check input{
+	width: 15px;
+	height: 15px;
+	box-shadow: 2px 2px 2px grey;
+	padding-top: 30px;
+}
+.check{
+	padding-top: 5px;
+	text-shadow: 5px 5px 5px grey;
+	color: black;
+}

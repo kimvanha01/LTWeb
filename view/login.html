@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../lib/login.css">
+</head>
+<body>
+	<div id = "id01"  class="model">
+		<div class="login" >
+			<div class="header">
+				<h2>Log in </h2>
+			</div>
+			<form id="form" class="form1">			
+				<div class="form-control">
+					<label for="username" > <b>UserName</b></label>					
+					<input type="type" id="username" placeholder="Enter your username" required>
+				</div>
+				<div class="form-control">
+					<label for="password"><b>Password</b></label>				
+					<input type="Password" id="password" placeholder="**********" required>
+				</div>
+				<div class="form-control">
+					<label class="check">
+						<input type="checkbox" >
+						Remember me
+					</label>
+				</div>
+				<button type="submit" onclick="validateForm()">Login</button>			
+			</form>
+			<a href="forgetPass.html">Forget password?</a>
+		</div>
+	</div>
+	<script> 
+		function validateForm(){
+		var username = document.getElementById('username').value;
+		var password = document.getElementById('password').value;
+		if (username == "admin" && password == "123456"){
+			alert('Dang Nhap Thanh Cong');
+			window.open("./home_user.html")
+		}
+		else{
+			alert('Đăng nhập không thành công');	
+			
+		if (username ==''){
+			alert('Bạn chưa nhập tên đăng nhập');
+		}
+		else if (password ==''){
+			alert('Bạn chưa nhập mật khẩu');
+		}
+			return true;
+		}
+	 
+		return false;
+		}
+		
+		  </script>
+</body>
+</html>
