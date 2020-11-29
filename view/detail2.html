@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoes</title>
     <link rel="stylesheet" href="../lib/css/nav-footer.css">
-    <link rel="stylesheet" href="../lib/css/products.css">
+    <link rel="stylesheet" href="../lib/css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>  
     <div class="topnav">
@@ -43,9 +43,7 @@
                     width: 180px;
                     height: 40px;
                     border-radius: 100px;
-                    position: relative;
-                   ;
-                   " placeholder="   Search..">
+                    position: relative;" placeholder="   Search..">
                   <button type="submit"><svg class="pre-search-input-icon" fill="#111" height="30px" width="30px" viewBox="0 0 24 24"><path d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39zM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7z"></path></svg></button>
                 </form>
               </div>
@@ -59,225 +57,175 @@
             </ul> <!--end navbar-right -->
           </div> <!--end container -->
         </nav>
-        
       </div>
-    
-    <div class="main-products">
-        <div class="row">
-            <div class="side">
-              <h2>New Realease</h2>
-                <ul class="category">
+      <div class="row">
+        <div class="main">
+            <div class="row-2"><div class="column">
+                <img src="../lib/img/products/sn18.jpg" width="400px" height="500px">
+            </div>
+            <div class="column">
+                <img src="../lib/img/products/sn182.jpg" width="400px" height="500px">
+            </div>
+            </div>
+            <div class="row-2"><div class="column">
+                <img src="../lib/img/products/sn183.jpg" width="400px" height="500px">
+            </div>
+            <div class="column">
+                <img src="../lib/img/products/sn184.jpg" width="400px" height="500px">
+            </div>
+            </div>
+            <div class="row-2"><div class="column">
+                <img src="../lib/img/products/sn185.jpg" width="400px" height="500px">
+            </div>
+            <div class="column">
+                <img src="../lib/img/products/sn186.jpg" width="400px" height="500px">
+            </div>
+            </div>      
+            
 
-                    <li><a href="#">Lifestyle</a></li>
-                    <li><a href="#">Jordan</a></li>
-                    <li><a href="#">Running</a></li>
-                    <li><a href="#">Basketball</a></li>
-                    <li><a href="#">Training & Gym</a></li>
-                    <li><a href="#">Soccer</a></li>
-                    <li><a href="#">Skateboarding</a></li>
-                    <li><a href="#">Football</a></li>
-                    <li><a href="#">Baseball</a></li>
-                    <li><a href="#">Golf</a></li>
-                    <li><a href="#">Tennis</a></li>
-                    <li><a href="#">Track & Field</a></li>
-                    <li><a href="#">Walking</a></li>
-                </ul>
-                <hr>
-                <ul class="gender-col">
-                  <button type="button" class="collapsible"><a title="Filter Category" id="general" class="">Gender <small class="counter"></small></a></button>
-                  <div class="content">
-                    <div id="video-filter-container">
-                      <div id="general-content" class="video-filter-content">
-                      <ul class="children">
-                        <li id="category-3">
-                            <label class="selectit"><input value="3" type="checkbox" name="wpmm[]" id="in-category-3" checked /> Men</label></li>
-                        <li id="category-115"><label class="selectit"><input value="115" type="checkbox" name="wpmm[]" id="in-category-115"  /> Women</label></li>
-                        <li id="category-114"><label class="selectit"><input value="114" type="checkbox" name="wpmm[]" id="in-category-114"  /> Unisex</label></li>
-                      </ul>
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-                <hr>
-                <ul class="size">
-                  <button type="button" class="collapsible" >Size</button>
-                  <div class="content" >
-                    <div class="row">
-                      <div class="column4">
-                        <button class="btn-size">3.5</button>
-                        <button class="btn-size">5</button>
-                        <button class="btn-size">6.5</button>
-                        <button class="btn-size">8</button>
-                        <button class="btn-size">9.5</button>
-                        <button class="btn-size">11</button>
-                        <button class="btn-size">12.5</button>
-                      </div>
-                      <div class="column4">
-                        <button class="btn-size">4</button>
-                        <button class="btn-size">5.5</button>
-                        <button class="btn-size">7</button>
-                        <button class="btn-size">8.5</button>
-                        <button class="btn-size">10</button>
-                        <button class="btn-size">11.5</button>
-                        <button class="btn-size">13</button>
-                      </div>
-                      <div class="column4">
-                        <button class="btn-size">4.5</button>
-                        <button class="btn-size">6</button>
-                        <button class="btn-size">7.5</button>
-                        <button class="btn-size">9</button>
-                        <button class="btn-size">10.5</button>
-                        <button class="btn-size">12</button>
-                        <button class="btn-size">13.5</button>
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-                <hr>
-                <ul class="color">
-                  <button type="button" class="collapsible">Color</button>
-                  <div class="content">
-                      <div class="row">
-                        <div class="column4">
-                          <button class="color0"></button>
-                          <button class="color1"></button>
-                          <button class="color2"></button>
-                          <button class="color3"></button>
-                        </div>
-                        <div class="column4">
-                          <button class="color4"></button>
-                          <button class="color5"></button>
-                          <button class="color6"></button>
-                          <button class="color7"></button>
-                        </div>
-                        <div class="column4">
-                          <button class="color8"></button>
-                          <button class="color9"></button>
-                          <button class="color10"></button>
-                          <button class="color11"></button>
-                        </div>
-                      </div>
-                  </div>
-                </ul>
-                  
-
+         </div>
+        <div class="side">
+          <h2>Kyrie 7 Original</h2>
+          <img src="../lib/img/products/sn18.jpg" width="69px" height="69px">
+          <img src="../lib/img/products/sn18v2.jpg" width="69px" height="69px">
+          <img src="../lib/img/products/sn18v3.jpg" width="69px" height="69px">
+          <br>
+          <div class="size">
+            <h3>Select Size</h3>
+            <div class="row">
+              <div class="column3">
+                <button>US M 7 / W 8.5</button>
               </div>
-
-            <div class="main">
-                <div class="row-2">
-                    <div class="column">
-                        <div class="card running" >
-                            <a href="../view/detail2.html"><img src="../lib/img/products/sn18.jpg" alt="sn24" ></a>
-                            <div class="container">
-                              <p><b>$220</b></p>
-                              <h4><b>Kyrie 7 Original</b></h4>
-                              <p style="color: grey;">Men's Shoe</p>
-                              <button type="button" class="add-to-cart"> Add to Bag </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card running" >
-                          <a href="#"> 
-                          <img src="../lib/img/products/sn25.jpg" alt="sn24" >
-                        </a> 
-                            <div class="container">
-                              <p><b>$220</b></p>
-                              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
-                              <p style="color: grey;">Men's Shoe</p>
-                              <button type="button" class="add-to-cart"> Add to Bag </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column running">
-                        <div class="card" >
-                            <img src="../lib/img/products/sn26.jpg" alt="sn24" >
-                            <div class="container">
-                              <p><b>$220</b></p>
-                              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
-                              <p style="color: grey;">Men's Shoe</p>
-                              <button type="button" class="add-to-cart"> Add to Bag </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-2">
-                    <div class="column">
-                        <div class="card running" >
-                            <img src="../lib/img/products/sn24.jpg" alt="sn24" >
-                            <div class="container">
-                              <p><b>$220</b></p>
-                              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
-                              <p style="color: grey;">Men's Shoe</p>
-                              <button type="button" class="add-to-cart"> Add to Bag </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card jordan" >
-                            <img src="../lib/img/products/sn16.jpg" alt="sn24" >
-                            <div class="container">
-                              <p><b>$220</b></p>
-                              <h4><b>Jordan 1 2020 </b></h4>
-                              <p style="color: grey;">Men's Shoe</p>
-                              <button type="button" class="add-to-cart"> Add to Bag </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card basketball" >
-                            <img src="../lib/img/products/sn19.jpg" alt="sn24" >
-                            <div class="container">
-                              <p><b>$220</b></p>
-                              <h4><b>Nike Kyrie 7 2020 Flyknit</b></h4>
-                              <p style="color: grey;">Men's Shoe</p>
-                              <button type="button" class="add-to-cart"> Add to Bag </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-2">
-                    <div class="column">
-                        <div class="card running" >
-                            <img src="../lib/img/products/sn11.jpg" alt="sn24" >
-                            <div class="container">
-                              <p><b>$220</b></p>
-                              <h4><b>Nike Air Running </b></h4>
-                              <p style="color: grey;">Men's Shoe</p>
-                              <button type="button" class="add-to-cart"> Add to Bag </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card running" >
-                            <img src="../lib/img/products/sn12.jpg" alt="sn24" >
-                            <div class="container">
-                              <p><b>$220</b></p>
-                              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
-                              <p style="color: grey;">Men's Shoe</p>
-                              <button type="button" class="add-to-cart"> Add to Bag </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card basketball" >
-                            <img src="../lib/img/products/sn14.jpg" alt="sn24" >
-                            <div class="container">
-                              <p><b>$220</b></p>
-                              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
-                              <p style="color: grey;">Men's Shoe</p>
-                              <button type="button" class="add-to-cart"> Add to Bag </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="column3">
+                <button>US M 7.5 / W 9</button>
+              </div>
+              <div class="column3">
+                <button>US M 8 / W 9.5</button>
+              </div>
+              <div class="column3">
+                <button>US M 8.5 / W 10</button>
+              </div>
+              <div class="column3">
+                <button>US M 9.5 / W 10</button>
+              </div>
+              <div class="column3">
+                <button>US M 9 / W 10.5</button>
+              </div>
+              <div class="column3">
+                <button>US M 10 / W 11.5</button>
+              </div>
+              <div class="column3">
+                <button>US M 10.5 / W 12</button>
+              </div>
+              <div class="column3">
+                <button>US M 11 / W 12.5</button>
+              </div>
+              <div class="column3">
+                <button>US M 12.5 / W 13</button>
+              </div>
             </div>
           </div>
-          
-    </div>
+          <button class="button-add"> Add to Cart</button>
+          <br><br>
+          <button class="button-luv"> Favorite <span class="fa fa-heart"></span></button>
+          <br><br>
 
+          <h3>More about Kyrie</h3>
+          <p>Kyrie Irving is a creative force on and off the court. He needs his shoes to keep up with his playmaking, but also sync with his boundary-pushing style and ethos. The Kyrie 7 helps players at all levels take advantage of their quick first step by optimising the shoe's fit, court feel and banking ability. This EP version uses an extra-durable outsole that's ideal for outdoor courts.</p>
+          <ul class="about">
+            <li>Coulor Shown: Black/ Off Noir/ Chile/ Red/ White</li>
+            <li>Style: CQ9327</li>
+          </ul>
+          <hr>
+          <h3>Free Delivery and Return</h3>
+          <hr>
+          <h3>Reviews (2)</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        
+      </div>
 
-    <div class="footer" >
+      <div class="products-like">
+        <h2>You may also like</h2>
+        <div class="slider">
+        <div class="slide" id="slide-1">
+          <div class="card running" >
+            <a href="../view/detail1.html"><img src="../lib/img/products/sn24.jpg" alt="sn24" ></a>
+            <div class="container">
+              <p><b>$220</b></p>
+              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
+              <p style="color: grey;">Men's Shoe</p>
+            </div>
+        </div>
+        </div>
+        <div class="slide" id="slide-2">
+          <div class="card running" >
+            <a href="../view/detail1.html"><img src="../lib/img/products/sn25.jpg" alt="sn24" ></a>
+            <div class="container">
+              <p><b>$220</b></p>
+              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
+              <p style="color: grey;">Men's Shoe</p>
+            </div>
+        </div>
+        </div>
+        <div class="slide" id="slide-3">
+          <div class="card running" >
+            <a href="../view/detail1.html"><img src="../lib/img/products/sn26.jpg" alt="sn24" ></a>
+            <div class="container">
+              <p><b>$220</b></p>
+              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
+              <p style="color: grey;">Men's Shoe</p>
+            </div>
+        </div>
+        </div>
+        <div class="slide" id="slide-4">
+          <div class="card running" >
+            <a href="../view/detail1.html"><img src="../lib/img/products/sn16.jpg" alt="sn24" ></a>
+            <div class="container">
+              <p><b>$220</b></p>
+              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
+              <p style="color: grey;">Men's Shoe</p>
+            </div>
+        </div>
+        </div>
+        <div class="slide" id="slide-5">
+          <div class="card running" >
+            <a href="../view/detail1.html"><img src="../lib/img/products/sn19.jpg" alt="sn24" ></a>
+            <div class="container">
+              <p><b>$220</b></p>
+              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
+              <p style="color: grey;">Men's Shoe</p>
+            </div>
+        </div>
+        </div>
+        <div class="slide" id="slide-5">
+          <div class="card running" >
+            <a href="../view/detail1.html"><img src="../lib/img/products/sn19.jpg" alt="sn24" ></a>
+            <div class="container">
+              <p><b>$220</b></p>
+              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
+              <p style="color: grey;">Men's Shoe</p>
+            </div>
+        </div>
+        </div>
+        <div class="slide" id="slide-5">
+          <div class="card running" >
+            <a href="../view/detail1.html"><img src="../lib/img/products/sn19.jpg" alt="sn24" ></a>
+            <div class="container">
+              <p><b>$220</b></p>
+              <h4><b>Nike Air VaporMax 2020 Flyknit</b></h4>
+              <p style="color: grey;">Men's Shoe</p>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="footer" >
         <div class="row2">
           <div class="column2" >
 
@@ -342,40 +290,6 @@
     </form>
   </div>
   
-<script src="../JS/home.js"></script>
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-  </script>
-  <script>
-$(function() {
-	$('#general  .counter').text(' ');
-	
-	var generallen = $("#general-content input[name='wpmm[]']:checked").length;
-	if(generallen>0){$("#general  .counter").text('('+generallen+')');}else{$("#general  .counter").text(' ');}
-})
-
-function updateCounter() {
-    var len = $("#general-content input[name='wpmm[]']:checked").length;
-	if(len>0){$("#general  .counter").text('('+len+')');}else{$("#general  .counter").text(' ');}
-}
-
-$("#general-content input:checkbox").on("change", function() {
-	updateCounter();
-});
-
-    </script>
+  <script src="../JS/home.js"></script>
 </body>
 </html>

@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+  }
+  /* box-shadow: rgb(229, 229, 229) 0px -1px 0px 0px inset; */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  .side .button-add{
+
+        background-color: #111111;
+        font-size:16px;
+        font-weight:500;
+        width:320px;
+        height:60px;
+        border: none;
+        color: white;
+        padding: 18px 24px;
+        text-align: center;
+        text-decoration: none solid rgb(255, 255, 255);
+        display: inline-block;
+        margin: 0 1px 0 0;
+        cursor: pointer;
+        border-radius: 30px;
+
+  }
+  .side .button-luv{
+    border: 1.5px solid rgb(229, 229, 229) ;
+    background-color: #ffffff;
+    font-size:16px;
+    font-weight:500;
+    width:320px;
+    height:60px;
+    color: black;
+    padding: 18px 24px;
+    text-align: center;
+    text-decoration: none solid rgb(17, 17, 17);
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0 1px 0 0;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+.about li{
+list-style-type: circle;
+}
+.checked {
+  color: orange;
+}
+
+
+  .main {   
+    flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  .row-2{  
+    margin-left: 4%;
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+  }
+  .column{ 
+    flex: 33%; 
+    background-color: #ffffff;
+    padding: 5px;
+  }
+  .row-2::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .size{
+    margin-bottom: 10px;
+  }
+  .column3{ 
+    flex: 20%;
+    background-color: #ffffff;
+    padding: 5px;
+
+  }
+  .column3 button{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border: 1.5px solid rgb(229, 229, 229);
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0 1px 0 0;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+  }
+  
+  .chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  .slider {
+    background: #ffffff;
+    display: flex;
+    height: 550px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  .slide {
+    width: 380px;
+    flex-shrink: 0;
+    height: 100%;
+  }
+  .card img{
+    width: 100%;
+  }
+  .card img:hover {
+    opacity: 0.5;
+  }
+  .card:nth-child(1){
+    margin-left: 15px;
+  }
+  .products-like h2{
+    margin-left: 4%;
+    font-weight: 500;
+  }
+

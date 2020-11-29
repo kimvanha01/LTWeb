@@ -66,8 +66,6 @@
 }
 
 * {
-
-  padding: 0;
   border: none;
 }
 html {
@@ -340,7 +338,7 @@ html {
     padding: 3%;
     position: relative;
     float: left;
-    margin-bottom: 12%;
+    margin-bottom: 14%;
   }
   .more h1 {
     margin-bottom: 1%;
@@ -354,8 +352,11 @@ html {
     margin-top: 10%;
     padding: 0px;
     text-align: center;
-    height: 100px;
-    width: 100%;
     position: relative;
-  }
+    height: 85vh;
+    width: 100%;
 
+  }
+  .footer{
+    margin-top: 40% !important;
+  }

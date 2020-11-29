@@ -47,10 +47,11 @@ a{
   }
   .logo{
     float: left;
-    margin-right:15% ;
+    margin-right:13% ;
   }
 .nav .search-container {
     float: left;
+
   }
 .nav .search-container button {
     float: right;
@@ -67,25 +68,30 @@ a{
   .navbar-right{
     position: relative;
     float: right;
-    top: -20px;
+    top: -15px;
     right: 5%;
   }
   .nav .search-container button:hover {
-    background: #ccc;
+    border-radius: 50%;
   }
   .logo{
       margin-left: 20px;
+  }
+  #cart:hover{
+    border-radius: 50%;
   }
   .news{
       width: 100%;
       height: 30px;
   }
-
+  .input{
+    border-width: 0 !important ;
+  }
   .badge {
     position: absolute;
-    top: -10px;
-    right: -10px;
-    padding: 5px 10px;
+    top: -2px;
+    right: -2px;
+    padding: 2px 9px;
     border-radius: 50%;
     background-color: grey;
     color: white;
@@ -123,7 +129,7 @@ a{
   /*FOOTER*/
   .footer{
     box-sizing: border-box;
-    margin-top: 40%;
+    margin-top: 2%;
     width: 100%;
     float: left;
     height: 40vh;
@@ -163,6 +169,7 @@ a{
     bottom: 23px;
     right: 28px;
     width: 280px;
+    z-index: 998;
   }
   .chat-popup {
     display: none;
@@ -170,7 +177,7 @@ a{
     bottom: 0;
     right: 15px;
     border: 3px solid #f1f1f1;
-    z-index: 9;
+    z-index: 999;
   }
   .form-container {
     max-width: 300px;
