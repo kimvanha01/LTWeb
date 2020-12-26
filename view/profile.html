@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Member</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../lib/profile.css">
+</head>
+<body>
+
+  <div class="profile-icon">
+    <img src="../lib/profile_icon.PNG">
+    <div class="profile-icon-detail">
+      <b>emmhung</b>
+      <p>Hồ sơ thông tin</p>
+    </div>
+  </div>
+
+	<div class="tab">
+  		<button class="tablinks" onclick="openLink(event, 'info')" id="defaultOpen">Thông tin cá nhân</button>
+  		<button class="tablinks" onclick="openLink(event, 'noti')">Thông báo</button>
+  		<button class="tablinks" onclick="openLink(event, 'prod')">Sản phẩm yêu thích</button>
+  		<button class="tablinks" onclick="openLink(event, 'histo')">Lịch sử mua hàng</button>
+	</div>
+
+	<div id="info" class="tabcontentIF">
+  		<div class="info">
+  			<h3>Hồ sơ của tôi</h3>
+  			<p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+  		</div>
+  		<div class="info-detail">
+  			<label class="detail">Tên đăng nhập</label>
+  			<label class="detail">emmhung</label>
+  		</div>
+  		<div class="info-detail">
+  			<label class="detail">Tên</label>
+  			<input type="text" value="Nguyễn Mạnh Hùng" class="input">
+  		</div>
+  		<div class="info-detail">
+  			<label class="detail">Email</label>
+  			<input type="text" value="hungmn@gmail.com" class="input">
+  		</div>
+  		<div class="info-detail">
+  			<label class="detail">Số điện thoại</label>
+  			<input type="text" value="085733xxxx" class="input">
+  		</div>
+  		<div class="info-detail">
+  			<label class="detail">Địa chỉ</label>
+  			<input type="text" value="Số 3 Ngõ 19/1, Thiên Hiền, Nam Từ Liêm, Hà Nội" class="input">
+  		</div>
+  		<div class="info-detail">
+  			<label class="detail">Giới tính</label>
+  			<input type="radio" name="sex"> Nam
+  			<input type="radio" name="sex"> Nữ
+  			<input type="radio" name="sex"> Khác
+  		</div>
+  		<div class="info-detail">
+  			<label class="detail">Ngày Sinh</label>
+  			<select>
+  				<option value="0">- Ngày -</option>
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+  				<option value="6">6</option>
+  				<option value="7">7</option>
+  				<option value="8">8</option>
+  				<option value="9">9</option>
+  				<option value="10">10</option>
+  				<option value="11">11</option>
+  				<option value="12">12</option>
+  				<option value="13">...</option>
+  			</select>
+  			<select>
+  				<option value="0">- Tháng -</option>
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+  				<option value="5">5</option>
+  				<option value="6">6</option>
+  				<option value="7">7</option>
+  				<option value="8">8</option>
+  				<option value="9">9</option>
+  				<option value="10">10</option>
+  				<option value="11">11</option>
+  				<option value="12">12</option>
+  			</select>
+  			<select>
+  				<option value="0">- Năm -</option>
+  				<option value="1">1990</option>
+  				<option value="2">1991</option>
+  				<option value="3">1992</option>
+  				<option value="4">1993</option>
+  				<option value="5">1994</option>
+  				<option value="6">1995</option>
+  				<option value="7">1996</option>
+  				<option value="8">1997</option>
+  				<option value="9">1998</option>
+  				<option value="10">1999</option>
+  				<option value="11">2000</option>
+  				<option value="12">2001</option>
+  				<option value="13">2002</option>
+  			</select>
+  		</div>
+  		<div class="info-detail">
+  			<label class="detail">Mật Khẩu</label>
+  			<input type="text" value="" class="password">
+  			<a href="#">Thay đổi mật khẩu</a>
+  		</div>
+      <button class="save"> Lưu thông tin</button>
+	</div>
+
+	<div id="noti" class="tabcontent">
+  		<div class="info">
+        <h3>Thông báo</h3>
+        
+      </div>
+	</div>
+
+	<div id="prod" class="tabcontent">
+  		<div class="item">
+        <div class="buttons">
+          <img src="../lib/delete-icn.svg">
+     
+        </div>
+ 
+        <div class="image">
+          <img src="../lib/item-1.png" alt="" />
+        </div>
+ 
+        <div class="description">
+          <span>Common Projects</span>
+          <span>Bball High</span>
+          <span>White</span>
+        </div>
+ 
+        <div class="total-price">$549</div>
+      </div>
+ 
+  
+      <div class="item">
+        <div class="buttons">
+          <img src="../lib/delete-icn.svg">
+     
+        </div>
+ 
+        <div class="image">
+          <img src="../lib/item-2.png" alt=""/>
+        </div>
+ 
+        <div class="description">
+          <span>Maison Margiela</span>
+          <span>Future Sneakers</span>
+          <span>White</span>
+        </div>
+ 
+    
+ 
+        <div class="total-price">$870</div>
+      </div>
+ 
+  
+      <div class="item">
+        <div class="buttons">
+          <img src="../lib/delete-icn.svg">
+      
+        </div>
+ 
+        <div class="image">
+          <img src="../lib/item-3.png" alt="" />
+        </div>
+ 
+        <div class="description">
+          <span>Our Legacy</span>
+          <span>Brushed Scarf</span>
+          <span>Brown</span>
+        </div>
+        <div class="total-price">$349</div>
+      </div>
+  </div>
+	
+	<div id="histo" class="tabcontent">
+  		<p>Lịch sử mua hàng đang trống</p>
+  		
+	</div>
+	<script type="text/javascript" src="../lib/profile.js"></script>
+</body>
+</html>

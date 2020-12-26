@@ -2,6 +2,7 @@
     box-sizing: border-box;
   }
   /* box-shadow: rgb(229, 229, 229) 0px -1px 0px 0px inset; */
+
 .row {  
     display: -ms-flexbox; /* IE10 */
     display: flex;

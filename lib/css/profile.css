@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.profile-icon{
+  width: 88%;
+  margin: 30px 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  float: left;
+  border-radius: 7px;
+  background-color: #f1f1f1;
+  width: 20%;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 7px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontentIF {
+  float: left;
+  margin-top: 20px;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 60%;
+  border-radius: 7px;
+  height: 550px;
+}
+
+.tabcontent {
+  float: left;
+  margin-top: 20px;
+
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 60%;
+  border-radius: 7px;
+  height: 400px;
+}
+.info{
+  border-bottom: 1px solid #ccc;
+
+}
+
+.info-detail{
+  width: 90%;
+  height: 35px;
+
+  margin: 10px auto;
+}
+
+.info-detail a{
+  font-size: small;
+  margin-left: 20px;
+}
+.info-detail a:hover{
+  color: #ccc;
+}
+
+.info-detail select{
+  width: 17%;
+  height: 30px;
+  border-radius: 4px;
+  float: left;
+  margin-left: 10px;
+}
+
+.input{
+  width: 70%;
+  height: 30px;
+  border-radius: 4px;
+  float: left;
+}
+
+.password{
+  width: 40%;
+  height: 30px;
+  border-radius: 4px;
+  float: left;
+}
+
+.detail{
+  width: 30%;
+  height: 30px;
+  text-align: auto;
+  float: left;
+  
+}
+
+.save{
+  width: 30%;
+  height: 30px;
+  margin: 20px 40%;
+  border-radius: 4px;
+  background-color: #000;
+  color: orange;
+}
+.save:hover{
+  background-color: #ccc;
+}
+
+.item {
+  padding: 20px;
+  height: 120px;
+  display: flex;
+
+}
+.buttons{
+  margin: 40px 40px;
+}
+
+.image {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+ 
+
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+
+
+.total-price {
+  width: 50px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}

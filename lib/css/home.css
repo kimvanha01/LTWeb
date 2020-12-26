@@ -1,3 +1,5 @@
+
+
 .open-button {
 background-color:transparent;
   opacity: 0.8;
@@ -275,6 +277,7 @@ html {
     float: left;
     position: relative;
     margin-top: 5%;
+    margin-bottom : 3%;
   }
   .content-banner2 {
     float: left;

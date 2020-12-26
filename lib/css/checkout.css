@@ -1,0 +1,202 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.left{
+	width: 50%;
+	margin: 30px auto;
+	float: left;
+}
+
+.addinput1{
+	width: 85%;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-top: 20px;
+	font-size: small;
+}
+
+.addinput{
+	width: 40%;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-top: 20px;
+	font-size: small;
+}
+
+.select{
+	width: 40%;
+	height: 30px;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-top: 20px;
+	font-size: small;
+}
+.left-content{
+	border-bottom: 1px solid black;
+	width: 85%;
+	height: 35px;
+	margin-left: 5%;
+	font-size: large;
+	font-weight: bold; 
+	color: red;
+}
+.method{
+	margin-top: 30px;
+}
+.container2 {
+	width: 85%;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 5%;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: medium;
+
+}
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 0.5px solid black;
+}
+.container2:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container2 input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container2 input:checked ~ .checkmark:after {
+  display: block;
+  
+}
+.container2 .checkmark:after {
+ 	top: 3.5px;
+	left: 3.5px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background:#2196F3 ;
+}
+
+.right{
+	width: 50%;
+	margin: 30px auto;
+	float: left;
+	
+}
+.form{
+	width: 90%;
+	height: 535px;
+	border-radius: 10px;
+	margin: auto;
+	background-color: #eeeeee;
+	padding-left: 60px;
+	padding-top: 10px;
+}
+
+.item {
+  padding: 20px;
+  height: 100px;
+  display: flex;
+}
+
+
+.image {
+  margin-right: 40px;
+}
+ 
+
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+
+.quantity {
+  padding-top: 20px;
+  margin-right: 40px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 20px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+.total-price {
+  width: 50px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+.order_line{
+	width: 45%;
+	height: 30px;
+	border-bottom: 1px solid black;
+	margin-top: 10px;
+	text-align: left;
+	float: left;
+}
+.order_liner{
+	width: 45%;
+	height: 30px;
+	border-bottom: 1px solid black;
+	margin-top: 10px;
+	text-align: right;
+	float: left;
+}
+.order_line1{
+	font-family: sans-serif;
+	font-size: large;
+	
+}
+.order_line2{
+	font-family: sans-serif;
+	font-size: large;
+	
+}
+#makm{
+	color: red;
+	
+}
+.form button{
+	width: 90%;
+	height: 30px;
+	background-color: black;
+	color: white;
+}
+.form button:hover{
+	background-color: #ccc;
+}

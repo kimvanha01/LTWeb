@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 }
 
-body {
+/* body {
 	background-color: #FFF;
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
@@ -11,20 +11,19 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	margin: 0;
-}
+} */
 
-.container {
+.container2 {
 	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 	width: 400px;
 	max-width: 100%;
+	margin: auto;
 }
 
 .header {
-	border-bottom: 1px solid #f0f0f0;
-	background-color: #f7f7f7;
+	margin-top: 20%;
+	text-align: center;
 	padding: 20px 40px;
 }
 
@@ -33,66 +32,59 @@ body {
 	color: black;
 }
 
-.form {
+.form1 {
 	padding: 30px 40px;	
 }
 
-.form-control {
+.form-control1 {
 	margin-bottom: 10px;
-	padding-bottom: 20px;
+
 	position: relative;
 }
 
-.form-control label {
-	display: inline-block;
-	margin-bottom: 5px;
-	color: black;
-	text-shadow: 5px 5px 5px grey;
-}
 
-.form-control input {
+.form-control1 input {
 	border: 2px solid #f0f0f0;
-	border-radius: 4px;
+
 	display: block;
 	font-family: inherit;
 	font-size: 14px;
 	padding: 10px;
 	width: 100%;
-	box-shadow: 5px 5px 5px grey;
+
 }
 
-.form-control input:focus {
+.form-control1 input:focus {
 	outline: 0;
 	border-color: #777;
-
 }
 
-.form-control.success input {
+.form-control1.success input {
 	border-color: #2ecc71;
 }
 
-.form-control.error input {
+.form-control1.error input {
 	border-color: #e74c3c;
 }
 
-.form-control i {
+.form-control1 i {
 	visibility: hidden;
 	position: absolute;
 	top: 40px;
 	right: 10px;
 }
 
-.form-control.success i.fa-check-circle {
+.form-control1.success i.fa-check-circle {
 	color: #2ecc71;
 	visibility: visible;
 }
 
-.form-control.error i.fa-exclamation-circle {
+.form-control1.error i.fa-exclamation-circle {
 	color: #e74c3c;
 	visibility: visible;
 }
 
-.form-control small {
+.form-control1 small {
 	color: #e74c3c;
 	position: absolute;
 	bottom: 0;
@@ -100,13 +92,13 @@ body {
 	visibility: hidden;
 }
 
-.form-control.error small {
+.form-control1.error small {
 	visibility: visible;
 }
 
-.form button {
+.form1 button {
 	background-color: black;
-	border: 2px solid #8e44ad;
+	border: 2px solid black;
 	border-radius: 4px;
 	color: #fff;
 	display: block;
@@ -115,10 +107,9 @@ body {
 	padding: 10px;
 	margin-top: 20px;
 	width: 100%;
-	box-shadow: 5px 5px 5px grey;
 }
 
-.form button:hover {
+.form1 button:hover {
 	background-color: grey;
 }
 .form-checkbox label{
@@ -132,4 +123,23 @@ body {
 	margin-top: 20px;
 	display: contents;
 	margin-left: 20px;
+}
+.gender{
+	margin-bottom: 4%;
+}
+.gender .btn-gender{
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	border: 1.5px solid rgb(229, 229, 229);
+	color: black;
+	white-space: nowrap;
+	display: inline-block;
+
+	cursor: pointer;
+	background-color: #ffffff;
+
+}
+.gender .btn-gender:nth-child(1){
+	margin: 0 15px 0 0;
 }
